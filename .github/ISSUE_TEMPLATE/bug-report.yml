@@ -6,13 +6,26 @@ body:
   - type: markdown
     attributes:
       value: "### Please provide details below 👇"
-  
+
   - type: input
     id: system
     attributes:
       label: "Operating System"
       description: "Which OS are you using?"
       placeholder: "Windows 11, macOS Ventura..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "How severe is this bug?"
+      options:
+        - 🔴 Critical (System Down, Major Security Issue)
+        - 🟠 High (Major Issue, No Workaround)
+        - 🟡 Medium (Affects Functionality, Workaround Available)
+        - 🔵 Low (Minor UI Issue, No Impact on Functionality)
     validations:
       required: true
 
