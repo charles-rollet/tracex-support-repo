@@ -22,11 +22,10 @@ body:
       label: "Severity"
       description: "How severe is this bug?"
       options:
-        - "🚨 Select severity (required)"
-        - "🔴 Severity: Critical"
-        - "🟠 Severity: High"
-        - "🟡 Severity: Medium"
-        - "🔵 Severity: Low"
+        - 🔴 Critical (System Down, Major Security Issue)
+        - 🟠 High (Major Issue, No Workaround)
+        - 🟡 Medium (Affects Functionality, Workaround Available)
+        - 🔵 Low (Minor UI Issue, No Impact on Functionality)
     validations:
       required: true
 
