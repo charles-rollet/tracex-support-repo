@@ -1,0 +1,26 @@
+name: 🐞 Bug Report
+description: Report an issue with the project.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "### Please provide details below 👇"
+  
+  - type: input
+    id: system
+    attributes:
+      label: "Operating System"
+      description: "Which OS are you using?"
+      placeholder: "Windows 11, macOS Ventura..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the issue"
+      description: "What happened? Provide steps to reproduce."
+      placeholder: "Steps to reproduce the bug..."
+    validations:
+      required: true
