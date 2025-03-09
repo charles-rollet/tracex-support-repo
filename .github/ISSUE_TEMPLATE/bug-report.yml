@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Report an issue with the project.
-title: ""  # Removed "[Bug]:" from the title
+title: "Describe the bug here..."  # Placeholder instead of "[Bug]:"
 labels: [bug]
 body:
   - type: markdown
