@@ -36,21 +36,21 @@ body:
       label: "Describe the issue"
       description: "What happened? Provide steps to reproduce."
       placeholder: |
-        **Summary:**
+        Summary:
         (Briefly describe the bug)
         
-        **Steps to reproduce:**
+        Steps to reproduce:
         1. Login to the platform
         2. Navigate to XYZ
         3. Click on ABC
         
-        **Actual Result:**
+        Actual Result:
         (What actually happened?)
         
-        **Expected Result:**
+        Expected Result:
         (What should have happened?)
         
-        **Screenshots (if applicable):**
+        Screenshots (if applicable):
         (Attach screenshots to illustrate the issue)
     validations:
       required: true
