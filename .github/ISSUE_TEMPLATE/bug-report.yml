@@ -7,6 +7,19 @@ body:
     attributes:
       value: "### Please provide details below 👇"
 
+  - type: dropdown
+    id: device
+    attributes:
+      label: "Device Type"
+      description: "What type of device are you using?"
+      options:
+        - "Desktop"
+        - "Laptop"
+        - "Tablet"
+        - "Mobile Phone"
+    validations:
+      required: true
+
   - type: input
     id: system
     attributes:
@@ -15,6 +28,15 @@ body:
       placeholder: "Windows 11, macOS Ventura..."
     validations:
       required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: "Browser & Version (if applicable)"
+      description: "Which browser and version are you using?"
+      placeholder: "Google Chrome 120.0, Firefox 98.0..."
+    validations:
+      required: false
 
   - type: dropdown
     id: severity
