@@ -17,6 +17,6 @@ jobs:
               repo: context.repo.repo,
               body: "👋 Hi @${{ github.event.issue.user.login }},  
               Thanks for reporting this! We’ve received your bug report and are looking into it.  
-              @charles-rollet has been assigned and will follow up with you shortly. 🚀  
+              We will follow up with you shortly. 🚀  
               If you have any additional details, feel free to add them here!"
             });
