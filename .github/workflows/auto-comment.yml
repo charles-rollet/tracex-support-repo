@@ -10,13 +10,11 @@ jobs:
       - name: Post Auto-Comment
         uses: actions/github-script@v6
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
+            github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: "👋 Hi @${{ github.event.issue.user.login }},  
-              Thanks for reporting this! We’ve received your bug report and are looking into it.  
-              We will follow up with you shortly. 🚀  
-              If you have any additional details, feel free to add them here!"
+              issue_number: context.issue.number,
+              body: "👋 Hi @${{ github.event.issue.user.login }},\n\nThanks for reporting this! We’ve received your bug report and are looking into it. 🚀\n\nWe’ll review your issue and follow up with any updates. If you have any additional details, feel free to add them here!"
             });
