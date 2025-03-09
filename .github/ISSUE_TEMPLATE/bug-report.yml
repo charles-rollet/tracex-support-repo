@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Report an issue with the project.
-title: ""
+title: ""  # Removed "[Bug]:" from the title
 labels: [bug]
 body:
   - type: markdown
@@ -23,10 +23,10 @@ body:
       description: "How severe is this bug?"
       options:
         - "🚨 Select severity (required)"
-        - "🔴 Critical (System Down, Major Security Issue)"
-        - "🟠 High (Major Issue, No Workaround)"
-        - "🟡 Medium (Affects Functionality, Workaround Available)"
-        - "🔵 Low (Minor UI Issue, No Impact on Functionality)"
+        - "🔴 Severity: Critical"
+        - "🟠 Severity: High"
+        - "🟡 Severity: Medium"
+        - "🔵 Severity: Low"
     validations:
       required: true
 
