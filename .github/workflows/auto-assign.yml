@@ -1,0 +1,14 @@
+name: Auto Assign Issues
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign Issue to Creator and Charles Rollet
+        uses: pozil/auto-assign-issue@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: "${{ github.event.issue.user.login }}, charles-rollet"
